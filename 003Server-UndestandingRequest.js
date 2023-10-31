@@ -1,6 +1,6 @@
 const https=require('http');
 const server=https.createServer((req,res)=>{
-    console.log("Sachin")
+    console.log(req.url,req.method,req.headers)
 })
 
 server.listen(4000)
